@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>java调html</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		input {
+			background: pink;
+			padding: 10px;
+			align-content: center;
+			margin-top: 20px;
+		}
+	</style>
+
+	<script type="text/javascript">
+		function javaCallJs(username){
+			var name=document.getElementsByTagName("span")[0];
+			name.innerHTML=username;
+		}
+
+		function jsCallJavaParams(){
+			javascript:java.playVideo('https://gss3.baidu.com/6LZ0ej3k1Qd3ote6lo7D0j9wehsv/tieba-smallvideo-transcode/17_5014955baa85219ee6ed706aafd8bcdb_3.mp4?authorization=bce-auth-v1%2Fde94045c2e42438fad71ab8df47a6727%2F2017-02-19T18%3A08%3A25Z%2F1800%2F%2F6d7a756c19cfba52e8e311c8241a1eda1c77168cd0df5ff877bcf9e336cd9091','舞蹈')
+		}
+	</script>
+</head>
+<body>
+
+  <h4>hello 你好，我是<span>xxx</span></h4>
+  <img src="http://upload.jianshu.io/users/upload_avatars/2006512/119678704388.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/240/h/240">
+  <br>
+  <input type="button" value="点我一下掉java" onclick="window.java.showToast()">
+  <br>
+  <input type="button" value="点我一下给java传参数,播放视频" onclick="jsCallJavaParams()">
+  
+
+</body>
+</html>
